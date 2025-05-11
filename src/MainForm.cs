@@ -42,8 +42,8 @@ namespace EmmysRandomNumbers
         {
             Random RNG = new Random();
 
-            int prefix = RNG.Next(100, 1000);     // ensures first digit isn't 0
-            int lineNumber = RNG.Next(0, 10000);  // can be 0000 to 9999
+            int prefix = RNG.Next(100, 1000);     
+            int lineNumber = RNG.Next(0, 10000);  
             string phoneNumber = "(909)-" + prefix + "-" + lineNumber;
 
             genTextBox.Text = phoneNumber;
